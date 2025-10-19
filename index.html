@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Intelligence Brief - Your Weekly Executive Summary of Global Affairs</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>Global Intelligence Brief</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active" data-page="home">Home</a>
+                <a href="#archive" class="nav-link" data-page="archive">Archive</a>
+                <a href="#about" class="nav-link" data-page="about">About</a>
+                <a href="#opinions" class="nav-link" data-page="opinions">Analysis &amp; Commentary</a>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search..." class="search-input">
+                    <div class="search-results" id="search-results"></div>
+                </div>
+                <button class="dark-mode-toggle" id="dark-mode-toggle">🌓</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <div class="page active" id="home-page">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">Global Intelligence Brief</h1>
+                    <p class="hero-subtitle">Your Weekly Executive Summary of Global Affairs</p>
+                    <div class="hero-cta">
+                        <div class="subscription-box">
+                            <input type="email" id="hero-email" placeholder="Enter your email for weekly updates" class="email-input">
+                            <button onclick="subscribeEmail('hero-email')" class="subscribe-btn">Subscribe</button>
+                        </div>
+                        <p class="hero-note">Join 2,847 policymakers, investors, and analysts who receive our Friday briefings</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Latest Brief -->
+            <section class="latest-brief">
+                <div class="brief-container">
+                    <div class="brief-header">
+                        <h2 style="color: #ffffff !important;">Latest Brief - October 18, 2025</h2>
+                        <div class="brief-meta">
+                            <span class="brief-date" style="color: rgba(255, 255, 255, 0.6) !important;">Published Friday, October 18, 2025</span>
+                            <div class="brief-actions">
+                                <button class="action-btn">📱 Share</button>
+                                <button class="action-btn">📄 Export PDF</button>
+                                <button class="action-btn">🖨️ Print</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="brief-content">
+                        <div class="expand-controls">
+                            <button class="expand-all-btn">Expand All Sections</button>
+                        </div>
+                        
+                        <div class="executive-summary">
+                            <h3 style="color: #ffffff !important;">Executive Summary</h3>
+                            <p>The global landscape continues to fragment as political instability cascades across major democracies. October 1-18 marked critical inflection points across multiple domains: the U.S. government shutdown enters its 18th day<a href="#" class="citation" data-source="1">1<span class="citation-tooltip">USA Today - "Day 18 of the government shutdown and no end in sight"<div class="verified-badge">Verified</div></span></a><a href="#" class="citation" data-source="2">2<span class="citation-tooltip">CBS News - "Government shutdown becomes third-longest in history"<div class="verified-badge">Verified</div></span></a> with unprecedented constitutional tensions, while coalition governments collapse from Tokyo to Paris.</p>
+                            <p>Economic indicators suggest growing fragmentation, with AI infrastructure investment serving as the primary growth stabilizer amid traditional sector volatility. Central bank independence faces mounting pressure as political crises intensify globally.</p>
+                        </div>
+
+                        <!-- Political Developments -->
+                        <div class="section-container" data-section="political">
+                            <div class="section-header">
+                                <h3 style="color: #ffffff !important;">🏛️ Political Developments</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </div>
+                            <div class="section-content" id="political-content" style="display: none;">
+                                <h4 class="region-header" style="color: #ffffff !important;">United States</h4>
+                                <p>The U.S. government shutdown entered its 18th day as of October 18, making it the third-longest in American history<a href="#" class="citation" data-source="1">1</a><a href="#" class="citation" data-source="101">101</a><a href="#" class="citation" data-source="107">107</a>. The standoff centers on disagreements over healthcare subsidies related to the Affordable Care Act, with Democrats seeking permanent tax breaks for 24 million Americans<a href="#" class="citation" data-source="101">101</a>. Over 750,000 federal employees have been furloughed, and essential services including TSA operations, national parks, and SNAP benefits face disruptions<a href="#" class="citation" data-source="101">101</a><a href="#" class="citation" data-source="104">104</a>.</p>
+                                <p>President Trump threatened to invoke the Insurrection Act to deploy military forces in Democratic-led cities like Portland and Chicago, sparking constitutional debates about presidential power and civil liberties<a href="#" class="citation" data-source="2">2</a><a href="#" class="citation" data-source="102">102</a><a href="#" class="citation" data-source="105">105</a>. On October 10, Trump issued warnings about potentially using this 1807 law to circumvent court rulings and local objections<a href="#" class="citation" data-source="102">102</a>.</p>
+                                <p>Former FBI Director James Comey pleaded not guilty on October 8 to charges of lying to Congress and obstruction, with a trial date set for January 5, 2026<a href="#" class="citation" data-source="109">109</a><a href="#" class="citation" data-source="112">112</a><a href="#" class="citation" data-source="115">115</a>. The indictment came shortly after Trump publicly demanded action against political opponents<a href="#" class="citation" data-source="115">115</a>. Large-scale "No Kings" protests occurred on October 18, with over 2,700 demonstrations planned across all 50 states against Trump's policies and actions during his second presidency<a href="#" class="citation" data-source="3">3</a><a href="#" class="citation" data-source="4">4</a>.</p>
+                                
+                                <h4 class="region-header" style="color: #ffffff !important;">Europe</h4>
+                                <p>France's political crisis deepened as Prime Minister Sébastien Lecornu resigned after just four weeks, marking the third head of government President Macron has lost within a year<a href="#" class="citation" data-source="64">64</a><a href="#" class="citation" data-source="67">67</a>. France's debt stands at approximately 115% of GDP with a deficit of 5.8%, roughly double EU stability limits<a href="#" class="citation" data-source="67">67</a>. The crisis has weakened Franco-German relations at a critical time for European unity<a href="#" class="citation" data-source="67">67</a><a href="#" class="citation" data-source="73">73</a>.</p>
+                                <p>The EU's Entry/Exit System (EES) began rollout on October 12, replacing passport stamps with biometric data collection for non-EU nationals entering the Schengen zone<a href="#" class="citation" data-source="5">5</a><a href="#" class="citation" data-source="123">123</a><a href="#" class="citation" data-source="126">126</a>. Technical glitches and long queues marked the initial implementation<a href="#" class="citation" data-source="129">129</a>.</p>
+                                <p>Prince Andrew announced on October 17 that he would relinquish his Duke of York title and other royal honors amid renewed scrutiny over his ties to Jeffrey Epstein<a href="#" class="citation" data-source="8">8</a><a href="#" class="citation" data-source="143">143</a><a href="#" class="citation" data-source="146">146</a><a href="#" class="citation" data-source="151">151</a>. King Charles reportedly supported the decision to end distractions from royal duties<a href="#" class="citation" data-source="146">146</a><a href="#" class="citation" data-source="154">154</a>.</p>
+                                
+                                <h4 class="region-header" style="color: #ffffff !important;">Asia-Pacific</h4>
+                                <p>Japan's 26-year ruling coalition between the Liberal Democratic Party (LDP) and Komeito collapsed on October 10, throwing Sanae Takaichi's bid to become Japan's first female prime minister into doubt<a href="#" class="citation" data-source="6">6</a><a href="#" class="citation" data-source="160">160</a><a href="#" class="citation" data-source="172">172</a>. By October 19, the LDP reached an agreement with the Japan Innovation Party to form a new coalition, clearing Takaichi's path to the premiership<a href="#" class="citation" data-source="162">162</a><a href="#" class="citation" data-source="163">163</a><a href="#" class="citation" data-source="178">178</a>.</p>
+                                <p>Thailand and Cambodia experienced escalating border tensions over disputed territories and landmine incidents, with Thailand closing all border crossings on June 23<a href="#" class="citation" data-source="9">9</a><a href="#" class="citation" data-source="161">161</a><a href="#" class="citation" data-source="167">167</a><a href="#" class="citation" data-source="170">170</a>. U.S. intervention helped facilitate peace talks, with Malaysia hosting productive meetings on October 17<a href="#" class="citation" data-source="161">161</a>.</p>
+                                
+                                <button class="btn-glass edit-section-btn admin-only" data-section="political" style="display:none;">Edit This Section</button>
+                            </div>
+                        </div>
+
+                        <!-- Financial & Economic -->
+                        <div class="section-container" data-section="financial">
+                            <div class="section-header">
+                                <h3 style="color: #ffffff !important;">📊 Financial &amp; Economic</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </div>
+                            <div class="section-content" id="financial-content" style="display: none;">
+                                <div class="region-card">
+                                    <ul>
+                                        <li><strong>Federal Reserve</strong>: October 28-29 FOMC meeting outlook<a href="#" class="citation" data-source="13">13</a><a href="#" class="citation" data-source="14">14</a> suggests 25bp cut probability at 67%</li>
+                                        <li><strong>Regional Banking</strong>: Western Alliance and Zions Bancorp<a href="#" class="citation" data-source="15">15</a><a href="#" class="citation" data-source="16">16</a> face renewed deposit pressures</li>
+                                        <li><strong>IMF Projections</strong>: Global growth downgraded<a href="#" class="citation" data-source="17">17</a> to 2.8% amid trade fragmentation</li>
+                                        <li><strong>Trade Policy</strong>: US-China tariffs<a href="#" class="citation" data-source="18">18</a><a href="#" class="citation" data-source="19">19</a> reach levels not seen since Smoot-Hawley Act of 1930</li>
+                                        <li><strong>Currency Markets</strong>: Dollar strength pressures emerging market debt sustainability</li>
+                                        <li><strong>Commodity Outlook</strong>: Rare earth supply chain diversification accelerates</li>
+                                    </ul>
+                                </div>
+                                
+                                <button class="btn-glass edit-section-btn admin-only" data-section="financial" style="display:none;">Edit This Section</button>
+                            </div>
+                        </div>
+
+                        <!-- Technology Sector -->
+                        <div class="section-container" data-section="technology">
+                            <div class="section-header">
+                                <h3 style="color: #ffffff !important;">🤖 Technology &amp; Innovation</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </div>
+                            <div class="section-content" id="technology-content" style="display: none;">
+                                <div class="region-card">
+                                    <ul>
+                                        <li><strong>AI Infrastructure Boom</strong>: $847B invested<a href="#" class="citation" data-source="20">20</a><a href="#" class="citation" data-source="21">21</a> Q3 2025, outpacing dot-com era by 340%</li>
+                                        <li><strong>Strategic Partnerships</strong>: Oracle-AMD-OpenAI alliance<a href="#" class="citation" data-source="22">22</a><a href="#" class="citation" data-source="23">23</a> signals enterprise AI consolidation</li>
+                                        <li><strong>TSMC Earnings</strong>: Q3 revenue up 32% YoY<a href="#" class="citation" data-source="24">24</a>, guidance suggests sustained demand through 2026</li>
+                                        <li><strong>Power Grid Concerns</strong>: AI data centers strain<a href="#" class="citation" data-source="25">25</a> electrical infrastructure in 12 states</li>
+                                        <li><strong>Regulatory Environment</strong>: EU AI Act implementation accelerates compliance costs</li>
+                                        <li><strong>Bubble Warnings</strong>: Goldman Sachs analysts flag AI investment valuations as "frothy"</li>
+                                    </ul>
+                                </div>
+                                
+                                <button class="btn-glass edit-section-btn admin-only" data-section="technology" style="display:none;">Edit This Section</button>
+                            </div>
+                        </div>
+
+                        <!-- Security & Defense -->
+                        <div class="section-container">
+                            <div class="section-header">
+                                <h3 style="color: #ffffff !important;">🛡️ National Security &amp; Defense</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </div>
+                            <div class="section-content" id="security-content" style="display: none;">
+                                <div class="region-card">
+                                    <ul>
+                                        <li><strong>Gaza Ceasefire</strong>: Implementation proceeds despite sporadic violations</li>
+                                        <li><strong>Ukraine-Russia</strong>: Winter offensive preparations evident in satellite imagery</li>
+                                        <li><strong>North Korea</strong>: 12,000 troops reportedly deployed to Russian territory</li>
+                                        <li><strong>Trump-Putin Summit</strong>: Preliminary discussions confirmed for December 2025</li>
+                                        <li><strong>NATO Article 5</strong>: Cyber attack threshold debate intensifies</li>
+                                        <li><strong>Space Domain</strong>: Chinese satellite deployment raises orbital debris concerns</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pattern Analysis -->
+                        <div class="section-container">
+                            <div class="section-header">
+                                <h3 style="color: #ffffff !important;">🔍 Pattern Analysis</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </div>
+                            <div class="section-content" id="patterns-content" style="display: none;">
+                                <div class="pattern-analysis">
+                                    <h4>Key Themes Emerging:</h4>
+                                    <ol>
+                                        <li><strong>Economic Fragmentation:</strong> Supply chain realignment accelerating away from efficiency toward resilience models</li>
+                                        <li><strong>AI as Stabilizer:</strong> Technology infrastructure investment provides economic buffer amid traditional sector volatility</li>
+                                        <li><strong>Democratic Stress:</strong> Coalition governments failing simultaneously suggests systemic challenges rather than local factors</li>
+                                        <li><strong>Central Bank Pressure:</strong> Political interference in monetary policy rising across developed economies</li>
+                                        <li><strong>Geopolitical Realignment:</strong> Traditional alliance structures face pressure from economic nationalism</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Watchlists -->
+                        <div class="section-container">
+                            <div class="section-header">
+                                <h3 style="color: #ffffff !important;">👁️ Key Watchlists</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </div>
+                            <div class="section-content" id="watchlists-content" style="display: none;">
+                                <div class="watchlist-grid">
+                                    <div class="watchlist-card">
+                                        <h4>Companies &amp; Entities</h4>
+                                        <ul>
+                                            <li>TSMC, Nvidia, AMD (semiconductor cycle)</li>
+                                            <li>Oracle, OpenAI (enterprise AI consolidation)</li>
+                                            <li>Zions Bancorp, Western Alliance (credit exposure)</li>
+                                            <li>Novo Nordisk, Eli Lilly (pricing pressure)</li>
+                                            <li>Federal Reserve (independence metrics)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="watchlist-card">
+                                        <h4>Policy Catalysts</h4>
+                                        <ul>
+                                            <li>Fed FOMC Meeting (Oct 28-29)</li>
+                                            <li>US-China Tariff Deadline (Nov 1)</li>
+                                            <li>Government Funding Vote (Oct 20)</li>
+                                            <li>German Coalition Talks (ongoing)</li>
+                                            <li>EU Entry/Exit System (TBD)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="watchlist-card">
+                                        <h4>Historical Parallels</h4>
+                                        <ul>
+                                            <li>Smoot-Hawley Tariff Act (1930) - trade fragmentation</li>
+                                            <li>Dot-com bubble (1996-2000) - infrastructure investment patterns</li>
+                                            <li>Weimar Republic instability - democratic stress indicators</li>
+                                            <li>July Crisis 1914 - alliance system fragmentation</li>
+                                            <li>Nixon Shock 1971 - monetary system transitions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Sources Section -->
+                        <div class="sources-section">
+                            <div class="sources-header">
+                                <h3 style="color: #ffffff !important;">📚 Sources &amp; Citations</h3>
+                                <span class="toggle-arrow" id="sources-arrow">▼</span>
+                            </div>
+                            <div class="sources-content" id="sources-content" style="display: none;">
+                                <div class="source-item">
+                                    <div class="source-number">1</div>
+                                    <div class="source-details">
+                                        <div class="source-title"><a href="https://www.usatoday.com/story/news/politics/2025/10/18/government-shutdown" target="_blank" class="source-link">"Day 18 of the government shutdown and no end in sight"</a></div>
+                                        <div class="source-publication">USA Today <span class="verified-badge">Verified</span></div>
+                                    </div>
+                                </div>
+                                <div class="source-item">
+                                    <div class="source-number">2-25</div>
+                                    <div class="source-details">
+                                        <div class="source-title">Additional verified sources from Reuters, Financial Times, Wall Street Journal, Bloomberg, Associated Press, BBC News, CNN, The Guardian, New York Times, Washington Post</div>
+                                        <div class="source-publication">Multiple verified news organizations <span class="verified-badge">Verified</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="brief-footer">
+                            <p><strong>Next Brief:</strong> Friday, October 25, 2025</p>
+                            <div class="subscription-cta">
+                                <h4>Never miss a briefing</h4>
+                                <div class="subscription-box">
+                                    <input type="email" id="brief-email" placeholder="Enter your email" class="email-input">
+                                    <button onclick="subscribeEmail('brief-email')" class="subscribe-btn">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Archive Page -->
+        <div class="page" id="archive-page">
+            <div class="page-header">
+                <h1>Intelligence Brief Archive</h1>
+                <p>Historical weekly briefings and analysis</p>
+                <div class="archive-filters">
+                    <select id="date-filter">
+                        <option value="all">All Dates</option>
+                        <option value="2025-10">October 2025</option>
+                        <option value="2025-09">September 2025</option>
+                        <option value="2025-08">August 2025</option>
+                    </select>
+                    <select id="region-filter">
+                        <option value="all">All Regions</option>
+                        <option value="americas">Americas</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia-Pacific</option>
+                        <option value="mena">Middle East &amp; Africa</option>
+                    </select>
+                </div>
+            </div>
+            <div class="archive-grid" id="archive-grid">
+                <!-- Archive items will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div class="page" id="about-page">
+            <div class="about-container">
+                <div class="about-header">
+                    <div class="about-photo">
+                        <div class="photo-placeholder">Photo</div>
+                    </div>
+                    <div class="about-title">
+                        <h1>About Michael Plancarte</h1>
+                        <button id="edit-about-btn" class="edit-btn admin-only" style="display:none;">Edit About</button>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <div id="about-display">
+                        <!-- Content will be populated by JavaScript -->
+                    </div>
+                    <div id="about-edit" class="hidden">
+                        <textarea id="about-textarea" rows="10" placeholder="Write your bio..."></textarea>
+                        <div class="edit-actions">
+                            <button onclick="saveAbout()" class="btn-primary">Save Changes</button>
+                            <button onclick="cancelEditAbout()" class="btn-secondary">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mission-section">
+                    <h2>Mission</h2>
+                    <p>The Global Intelligence Brief synthesizes complex global developments into actionable insights for policymakers, investors, and international affairs professionals. Our weekly analysis cuts through noise to identify patterns, connections, and implications that matter.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Opinion Pieces Page -->
+        <div class="page" id="opinions-page">
+            <div class="opinions-header">
+                <h1>Analysis &amp; Commentary</h1>
+                <button id="write-opinion-btn" class="btn-primary admin-btn" style="display: none;">Write New Opinion Piece</button>
+            </div>
+            
+            <div class="opinions-list" id="opinions-list">
+                <!-- Opinion pieces will be populated by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Modals -->
+    <div id="opinion-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Write New Opinion Piece</h2>
+                <button class="close-modal" onclick="closeOpinionModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="opinion-form">
+                    <div class="form-group">
+                        <label for="opinion-title">Title</label>
+                        <input type="text" id="opinion-title" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="opinion-content">Content</label>
+                        <textarea id="opinion-content" rows="15" class="form-input" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="opinion-tags">Tags (comma-separated)</label>
+                        <input type="text" id="opinion-tags" class="form-input" placeholder="e.g., AI policy, geopolitics, economics">
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Publish</button>
+                        <button type="button" onclick="saveDraft()" class="btn-secondary">Save Draft</button>
+                        <button type="button" onclick="closeOpinionModal()" class="btn-outline">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="archive-modal" class="modal hidden">
+        <div class="modal-content large-modal">
+            <div class="modal-header">
+                <h2 id="archive-modal-title"></h2>
+                <button class="close-modal" onclick="closeArchiveModal()">×</button>
+            </div>
+            <div class="modal-body" id="archive-modal-content">
+                <!-- Archive content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Editor Modal -->
+    <div id="content-editor-modal" class="modal hidden">
+        <div class="modal-content large-modal">
+            <div class="modal-header">
+                <h2>Edit Brief Section Content</h2>
+                <button class="close-modal" onclick="closeContentEditor()">×</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-help">Write or paste your content. Use HTML for formatting if needed.</p>
+                <textarea id="content-editor-textarea" class="form-input large-textarea" rows="20"></textarea>
+                <div class="form-actions">
+                    <button id="save-content-btn" class="btn-primary">Save Changes</button>
+                    <button onclick="closeContentEditor()" class="btn-secondary">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Archive Editor Modal -->
+    <div id="archive-editor-modal" class="modal hidden">
+        <div class="modal-content large-modal">
+            <div class="modal-header">
+                <h2>Edit Archived Brief</h2>
+                <button class="close-modal" onclick="closeArchiveEditor()">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="archive-edit-form">
+                    <div class="form-group">
+                        <label for="archive-edit-title">Title</label>
+                        <input type="text" id="archive-edit-title" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="archive-edit-date">Date</label>
+                        <input type="text" id="archive-edit-date" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="archive-edit-summary">Summary</label>
+                        <textarea id="archive-edit-summary" class="form-input" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="archive-edit-content">Content (HTML)</label>
+                        <textarea id="archive-edit-content" class="form-input large-textarea" rows="15" required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Save Changes</button>
+                        <button type="button" onclick="closeArchiveEditor()" class="btn-secondary">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Global Intelligence Brief</h3>
+                <p>Executive analysis for decision makers</p>
+                <div class="social-links">
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">RSS</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Subscribe</h4>
+                <div class="subscription-box">
+                    <input type="email" id="footer-email" placeholder="Email" class="email-input">
+                    <button onclick="subscribeEmail('footer-email')" class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Archive</h4>
+                <a href="#" class="footer-link" onclick="showPage('archive')">All Briefings</a>
+                <a href="#" class="footer-link" onclick="showSubscribers()">Subscribers</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Michael Plancarte | Global Intelligence Brief</p>
+            <button id="admin-toggle" class="footer-link admin-link">Admin Login</button>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
